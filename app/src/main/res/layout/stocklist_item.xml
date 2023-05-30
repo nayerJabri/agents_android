@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/borderitem"
+    android:layout_marginBottom="8dp">
+    <TextView
+        android:id="@+id/stock_label"
+        android:text="تحويل"
+        android:textSize="17sp"
+        android:maxLines="1"
+        android:textColor="@color/itemtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="20dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/bar"
+        android:background="#e9ebee"
+        android:layout_marginBottom="9dp"
+        android:layout_below="@id/stock_label"/>
+
+    <TextView
+        android:id="@+id/menu"
+        android:text="السعر "
+        android:textSize="14sp"
+        android:gravity="right"
+        android:textColor="@color/itemtitle"
+        android:maxLines="1"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        />
+
+
+</RelativeLayout>

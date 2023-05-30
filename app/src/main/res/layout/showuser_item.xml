@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="85dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/borderitem"
+    android:layout_marginBottom="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/rasidnow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="5dp"
+                android:text="الرصيد الحالي 12345678"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorApp"
+                android:text="إشعار العميل"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name"
+                android:text="أحمد أحمد أحمد أحمد "
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:textColor="@color/itemtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/local"
+                android:text="متجر متجر متجر  "
+                android:textSize="17sp"
+                android:gravity="right"
+                android:textColor="@color/itemtitle"
+                android:maxLines="1"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                />
+
+            <TextView
+                android:id="@+id/phoneuser"
+                android:text="12345678"
+                android:textSize="17sp"
+                android:gravity="right"
+                android:textColor="@color/itemtitle"
+                android:maxLines="1"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/local"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

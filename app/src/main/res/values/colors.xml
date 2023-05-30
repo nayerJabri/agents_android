@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d2d4d8</color>
+    //coolor background app
+    <color name="background">#e9ebee</color>
+    <color name="colorPrimaryDark">#ffcc00</color>
+    <color name="colorAccent">#ffcc00</color>
+    //color background login interface
+    //color item stock
+    <color name="colorApp">#ffffff</color>
+    //color border edittext
+    <color name="colorborder">#ffcc00</color>
+    //color button
+    <color name="colorbutton">#ffcc00</color>
+    //title item
+    <color name="itemtitle">#000000</color>
+
+</resources>

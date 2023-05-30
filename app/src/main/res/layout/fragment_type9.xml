@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".View.Fragments.Type9Fragment">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textColor="#000000"
+            android:textSize="32dp"
+            android:id="@+id/title"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:hint="المنطقة"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:id="@+id/Governorates"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center_horizontal"
+                app:DoneSearchTintColor="@color/colorborder"
+                app:RevealEmptyText="اختر المحافظة"
+                app:RevealViewBackgroundColor="@color/colorborder"
+                app:SearchHintText="ابحث ..."
+                app:SearchViewBackgroundColor="@android:color/holo_orange_light"
+                app:ShowBorders="false"
+                app:SpinnerExpandHeight="190dp"
+                app:StartSearchTintColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currencyPrice"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:hint="العمولة 00.00"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:id="@+id/Currencies"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_horizontal"
+                app:DoneSearchTintColor="@color/colorborder"
+                app:RevealEmptyText="اختر العملة"
+                app:RevealViewBackgroundColor="@color/colorborder"
+                app:SearchHintText="ابحث ..."
+                app:SearchViewBackgroundColor="@android:color/holo_orange_light"
+                app:ShowBorders="false"
+                app:SpinnerExpandHeight="190dp"
+                app:StartSearchTintColor="@android:color/white">
+
+            </gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mablagh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="المبلغ"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/totalCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="8sp"
+            android:text="الإجمالي 00.00"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="8sp"
+            android:text="الإجمالي 00.00"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint=" إسم المستلم "
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint=" هاتف المستلم "
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/morsalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="إسم المرسل "
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/morsalphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="هاتف المرسل "
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="موافق "
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorborder"
+            android:textColor="@color/colorApp"
+            android:id="@+id/done"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
